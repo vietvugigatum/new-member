@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clingme new members</title>
+    
+    <style type="text/css">
+        html, body { height:100%; width:100%; } 
+        .diaporama { position: relative; height:100%; width: 100%;}
+        .diaporama img { 
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+            }
+    </style>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="diaporama">
+        <img src="./images/Giới thiệu Nguyen Dinh Thai.jpg" alt="…" />
+<img src="./images/GT Ly Trương__GT Ly Trương.001.jpeg" alt="…" />
+<img src="./images/Giới thiệu Trần Thị THùy Dương.jpg" alt="…" />
+<img src="./images/Giới thiệu Bùi Tuấn Linh__Slide1.jpg" alt="…" />
+<img src="./images/Giới thiệu Đỗ Minh Vương__Slide1.jpg" alt="…" />
+<img src="./images/Giới thiệu Trần Tiến Lâm__Giới thiệu Trần Tiến Lâm.001.jpeg" alt="…" />
+<img src="./images/Giới thiệu Nguyễn Anh Thư__Slide1.jpg" alt="…" />
+<img src="./images/Giới thiệu Thảo Uyên__Giới thiệu Thảo Uyên.001.jpeg" alt="…" />
+<img src="./images/Giới thiệu Hà My__Slide1.jpg" alt="…" />
+<img src="./images/Giới thiệu Phạm Minh Đức__Giới thiệu Phạm Minh Đức.001.jpeg" alt="…" />
+<img src="./images/Giới thiệu Nguyễn Văn Hiền__Giới thiệu Nguyễn Văn Hiền.001.jpeg" alt="…" />
+<img src="./images/Giới thiệu Võ Minh Thư__Giới thiệu Võ Minh Thư.001.jpeg" alt="…" />
+<img src="./images/Giới thiệu Phạm Xuân Hoàng.jpg" alt="…" />
+<img src="./images/Giới thiệu Nguyễn Minh Kỳ__Giới thiệu Nguyễn Minh Kỳ.001.jpeg" alt="…" />
+<img src="./images/Giới thiệu Trân Anh Đức__Giới thiệu Trân Anh Đức.001.jpeg" alt="…" />
+<img src="./images/Giới thiệu Dương Minh Hoàng__Slide1.jpg" alt="…" />
+<img src="./images/Giới thiệu Ngọc Trâm__Slide1.jpg" alt="…" />
+<img src="./images/Giới thiệu Phạm Quang Vinh__Giới thiệu Phạm Quang Vinh.001.jpeg" alt="…" />
+<img src="./images/Giới thiệu Anh Tây__Slide1.jpg" alt="…" />
+<img src="./images/Giới thiệu Lê Bích Ngọc__Slide1.jpg" alt="…" />
+<img src="./images/Giới thiệu Nguyễn Hằng Nga__Slide1.jpg" alt="…" />
+    </div>
+
+</body>
+<script type="text/javascript">
+    $(function(){
+        $('.diaporama img:gt(0)').hide();
+        setInterval(function(){
+            $('.diaporama :first-child').fadeOut(1500).next('img').fadeIn(1500).end().appendTo('.diaporama');
+        }, 5000);
+    });
+</script>
+</html>
