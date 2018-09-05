@@ -1,56 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Clingme new members</title>
-    
-    <style type="text/css">
-        html, body { height:100%; width:100%; } 
-        .diaporama { position: relative; height:100%; width: 100%;}
-        .diaporama img { 
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            height: 100%;
-            }
-    </style>
-    
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="diaporama">
-        <img src="./images/8.jpg" alt="…" />
-<img src="./images/9.jpg" alt="…" />
-<img src="./images/14.jpg" alt="…" />
-<img src="./images/15.jpg" alt="…" />
-<img src="./images/17.jpg" alt="…" />
-<img src="./images/16.jpg" alt="…" />
-<img src="./images/12.jpg" alt="…" />
-<img src="./images/13.jpg" alt="…" />
-<img src="./images/11.jpg" alt="…" />
-<img src="./images/10.jpg" alt="…" />
-<img src="./images/21.jpg" alt="…" />
-<img src="./images/20.jpg" alt="…" />
-<img src="./images/18.jpg" alt="…" />
-<img src="./images/19.jpg" alt="…" />
-<img src="./images/4.jpg" alt="…" />
+    <html>
+    <head>
+        <title>Clingme new members</title>
+        
+        <style type="text/css">
+            html, body { height:100%; width:100%; } 
+            .diaporama { position: relative; height:100%; width: 100%;}
+            .diaporama img { 
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 100%;
+                }
+        </style>
+        
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="diaporama">
+            <img src="./images/4.jpg" alt="…" />
 <img src="./images/5.jpg" alt="…" />
-<img src="./images/7.jpg" alt="…" />
-<img src="./images/6.jpg" alt="…" />
 <img src="./images/2.jpg" alt="…" />
 <img src="./images/3.jpg" alt="…" />
 <img src="./images/1.jpg" alt="…" />
-    </div>
+        </div>
 
-</body>
-<script type="text/javascript">
-    $(function(){
-        $('.diaporama img:gt(0)').hide();
-        setInterval(function(){
-            $('.diaporama :first-child').fadeOut(1500).next('img').fadeIn(1500).end().appendTo('.diaporama');
-        }, 10000);
-    });
-</script>
-</html>
+    </body>
+    <script type="text/javascript">
+        $(function(){
+            $('.diaporama img:gt(0)').hide();
+            setInterval(function(){
+                $('.diaporama :first-child').fadeOut(1500).next('img').fadeIn(1500).end().appendTo('.diaporama');
+            }, 10000);
+        });
+    </script>
+    </html>
